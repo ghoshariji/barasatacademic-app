@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+.main{
+    width: auto;
+    height: 100vh;
+    background: linear-gradient(#D5A3FF 0%, #77A5F8 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+    
+    
+}
+.payment-card{
+    display: flex;
+    flex: 1 1 300px;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid #ffffff40;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+    margin: 20px;
+   
+}
+.image{
+  
+    position: relative;
+    height: 150px;
+    width: 150px;
+   
+}
+.image .payment-pic{
+    
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.payment-data{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    margin-top: 15px;
+}
+.payment-data h2{
+    font-size: 33px;
+    font-weight: 600;
+}
+.payment-data span{
+    font-size: 18px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+
+}
+.row .info{
+    text-align: center;
+    padding:0 20px ;
+}
+
+.pay-btn{
+    width: 150px;
+    margin-top: 40px;
+}
+.pay-btn .btn100{
+  margin-left: 35px;
+  color:#333;
+  font-size: 18px;
+  border-radius: 25px;
+  padding: 8px 25px;
+  margin :0 20px;
+  white-space: nowrap;
+  background: linear-gradient(to left,#33ccff 0%,#ff99cc 100%);
+  border: none;
+}
+
+
+.pay-btn .btn100:hover{
+    box-shadow:inset 0 5px 15px rgba(0,0,0,0.4);
+}
+
+
+@media (max-width: 768px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(#D5A3FF 0%, #77A5F8 100%);
+        width: 100%;
+        height:250vh;
+        margin-top: 0.5rem;
+        height: auto;
+    }
+    .payment-card {
+        height: auto;
+        
+    }
+    .payment-data h2 {
+        font-size: 28px;
+    }
+    .payment-data span {
+        font-size: 16px;
+    }
+    .row {
+        display: flex;
+        flex-direction: column; /* Set row items to display in a column */
+    }
+    .row .info {
+        flex-basis: 100%;
+        text-align: center; 
+    }
+    .pay-btn .btn100{
+       
+        margin-top: 20px;
+    }
+}
